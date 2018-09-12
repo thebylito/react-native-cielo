@@ -1,0 +1,42 @@
+
+{
+  "name": "react-native-cielo",
+  "title": "React Native Cielo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/github_account/react-native-cielo.git",
+    "baseUrl": "https://github.com/github_account/react-native-cielo"
+  },
+  "keywords": [
+    "react-native"
+  ],
+  "author": {
+    "name": "Your Name",
+    "email": "yourname@email.com"
+  },
+  "license": "Apache-2.0",
+  "licenseFilename": "LICENSE",
+  "readmeFilename": "README.md",
+  "peerDependencies": {
+    
+    "react": "16.0.0-alpha.6",
+    "prop-types": "^15.6.2",
+    "react-native": "^0.55.4",
+    "react-native-windows": "0.41.0-rc.1"
+
+  },
+  "devDependencies": {
+    
+    "react": "16.0.0-alpha.6",
+    "prop-types": "^15.6.2",
+    "react-native": "^0.55.4",
+    "react-native-windows": "0.41.0-rc.1"
+ 
+  }
+}
