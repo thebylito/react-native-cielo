@@ -1,5 +1,5 @@
 
-package com.reactlibrary;
+package com.thebylito;
 
 import android.app.Activity;
 import android.support.annotation.Nullable;
@@ -7,7 +7,6 @@ import android.util.Log;
 import android.view.View;
 
 import java.util.Map;
-
 
 import com.facebook.infer.annotation.Assertions;
 import com.facebook.react.bridge.ReadableArray;
@@ -30,6 +29,7 @@ public class RNCieloManager extends SimpleViewManager<View> {
         // https://facebook.github.io/react-native/docs/native-components-android.html#1-create-the-viewmanager-subclass
         return REACT_CLASS;
     }
+
     @Override
     public View createViewInstance(ThemedReactContext reactContext) {
         mContext = reactContext;
@@ -43,37 +43,28 @@ public class RNCieloManager extends SimpleViewManager<View> {
     }
 
     @Override
-    public Map<String,Integer> getCommandsMap() {
-        Log.d("React"," View manager getCommandsMap:");
-        return MapBuilder.of(
-                "name",
-                NAME,
-                "name2",
-                NAME2);
+    public Map<String, Integer> getCommandsMap() {
+        Log.d("React", " View manager getCommandsMap:");
+        return MapBuilder.of("name", NAME, "name2", NAME2);
     }
 
     @Override
-    public void receiveCommand(
-            View view,
-            int commandType,
-            @Nullable ReadableArray args) {
+    public void receiveCommand(View view, int commandType, @Nullable ReadableArray args) {
         Assertions.assertNotNull(view);
         Assertions.assertNotNull(args);
         switch (commandType) {
-            case NAME: {
-                // action()
-                return;
-            }
-            case NAME2: {
-                // action()
-                return;
-            }
+        case NAME: {
+            // action()
+            return;
+        }
+        case NAME2: {
+            // action()
+            return;
+        }
 
-            default:
-                throw new IllegalArgumentException(String.format(
-                        "Unsupported command %d received by %s.",
-                        commandType,
-                        getClass().getSimpleName()));
+        default:
+            throw new IllegalArgumentException(
+                    String.format("Unsupported command %d received by %s.", commandType, getClass().getSimpleName()));
         }
     }
 }

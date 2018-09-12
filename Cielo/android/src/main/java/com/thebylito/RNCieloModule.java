@@ -1,5 +1,7 @@
 
-package com.reactlibrary;
+package com.thebylito;
+
+import android.util.Log;
 
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
@@ -20,8 +22,8 @@ public class RNCieloModule extends ReactContextBaseJavaModule {
   }
 
   @ReactMethod
-  public void acao(){
-    Log.d("RNNA", "OLAAAAA");
+  public void acao() {
+     Log.d("RNNA", "OLAAAAA");
   }
 
 }

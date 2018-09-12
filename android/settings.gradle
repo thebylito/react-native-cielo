@@ -1,3 +1,5 @@
 rootProject.name = 'reactnativecieloexample'
+include ':react-native-cielo'
+project(':react-native-cielo').projectDir = new File(rootProject.projectDir, '../Cielo/android')
 
 include ':app'
