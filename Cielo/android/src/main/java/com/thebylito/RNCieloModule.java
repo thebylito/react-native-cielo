@@ -23,7 +23,7 @@ public class RNCieloModule extends ReactContextBaseJavaModule {
 
   @ReactMethod
   public void acao() {
-     Log.d("RNNA", "OLAAAAA");
+    Log.d("RNNA", "OLAAAAA");
   }
 
 }
