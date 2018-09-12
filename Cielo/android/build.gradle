@@ -47,6 +47,7 @@ repositories {
 
 dependencies {
     api 'com.facebook.react:react-native:+'
+    implementation 'com.google.code.gson:gson:2.6.2'
 }
 
 def configureReactNativePom(def pom) {
