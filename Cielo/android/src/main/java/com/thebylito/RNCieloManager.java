@@ -44,7 +44,7 @@ public class RNCieloManager extends SimpleViewManager<View> {
 
     @Override
     public Map<String, Integer> getCommandsMap() {
-        Log.d("React", " View manager getCommandsMap:");
+         Log.d("React", " View manager getCommandsMap:");
         return MapBuilder.of("name", NAME, "name2", NAME2);
     }
 
